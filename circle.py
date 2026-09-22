@@ -1,12 +1,11 @@
 import math
 
 
-def area(r):
+def circle_area(r):
     '''Функция подсчета площади окружности, принимает параметр r - радиус, возвращает площадь: pi*r*r'''
     return math.pi * r * r
 
 
-def perimeter(r):
+def circle_perimeter(r):
     '''Функция подсчета периметра (длины) окружности, принимает параметр r - радиус, возвращает периметр: 2*pi*r '''
     return 2 * math.pi * r
-
