@@ -31,6 +31,16 @@ class RectangleTestCase(unittest.TestCase):
         res = rectangle_perimeter(10, 0)
         self.assertEqual(res, 20)
 
+    def test_diagonal(self):
+        """Обычный расчет диагонали у прямоугольника"""
+        res = rectangle_diagonal(3,4)
+        self.assertEqual(res, 5.0)
+    
+    def test_irrational_diagonall(self):
+        """Расчет диагонали с иррациональной длинной"""
+        res = rectangle_diagonal(1,3)
+        self.assertEqual(res, 10**(0.5))
+
 
 class CircleTestCase(unittest.TestCase):
     def test_circle_area(self):
@@ -98,13 +108,5 @@ class SquareTestCase(unittest.TestCase):
         res = square_perimeter(0)
         self.assertEqual(res, 0)
 
-    def test_diagonal(self):
-        """Обычный расчет диагонали у прямоугольника"""
-        res = rectangle_diagonal(3,4)
-        self.assertEqual(res, 5.0)
-
-    def test_irrational_diagonall(self):
-        """Расчет диагонали с иррациональной длинной"""
-        res = rectangle_diagonal(1,3)
-        self.assertEqual(res, 10**(0.5))
+    
 
